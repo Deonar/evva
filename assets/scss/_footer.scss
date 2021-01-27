@@ -1,0 +1,131 @@
+.footer {
+  padding: 50px 0 60px 0;
+  background-color: $black;
+  &-tel {
+    display: block;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 1);
+    &:hover {
+      color: rgba(255, 255, 255, 0.5);
+      transition: all 0.3s ease;
+    }
+  }
+  &-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &-app {
+    width: 100%;
+    max-width: 300px;
+    padding-right: 25px;
+    margin-right: 8%;
+  }
+  &-app__title {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 14px;
+    color: $text-gray;
+    margin-bottom: 20px;
+  }
+  &-app__list {
+    display: flex;
+    align-items: center;
+  }
+  &-app__link {
+    margin-right: 6px;
+  }
+  &-information {
+  }
+  &-information__title {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $text-light;
+    margin-bottom: 20px;
+  }
+  &-information__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &-information__item {
+    margin-bottom: 12px;
+    width: 33.333%;
+    padding-right: 30px;
+  }
+  &-iformation__link {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $text-light;
+      transition: all 0.3s ease;
+    }
+  }
+  &-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &-protection {
+    font-weight: 550;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+  &-social__list {
+    display: flex;
+    align-items: center;
+  }
+  &-social__item {
+    margin-right: 6px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &-social__link {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      svg {
+        transition: all 0.3s ease;
+        fill: $gold;
+      }
+    }
+    svg {
+      transition: all 0.3s ease;
+      fill: $white;
+    }
+    &.social__vk svg {
+      width: 10px;
+      height: 6px;
+    }
+    &.social__inst svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
