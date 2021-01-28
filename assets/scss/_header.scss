@@ -6,7 +6,7 @@
   right: 0;
   transition: all 0.5s ease;
   opacity: 1;
-  background: #fff;
+  background: $white;
   box-shadow: 0 0px 8px rgba(0, 0, 0, 0.15);
 }
 .header {
@@ -21,6 +21,45 @@
     z-index: 15;
     top: -100%;
     transition: all 0.3s;
+  }
+  &.h-fixed {
+    .header {
+      &-container {
+        padding: 18px 35px;
+      }
+      &-logo {
+        svg {
+          fill: rgba(0, 0, 0, 1);
+        }
+        &:hover svg {
+          fill: rgba(0, 0, 0, 0.7);
+        }
+      }
+      &-menu li a {
+        color: $black;
+        &:hover {
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
+      &-btn {
+        border: 1px solid rgba(0, 0, 0, 1);
+        color: $black;
+        &:hover {
+          color: rgba(0, 0, 0, 0.7);
+          border: 1px solid rgba(0, 0, 0, 0.7);
+        }
+      }
+      &-burger span {
+        background: $black;
+      }
+    }
+
+    .contact-tell {
+      color: rgba(0, 0, 0, 1);
+      &:hover {
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
   }
   &-container {
     position: relative;
@@ -124,9 +163,14 @@
     color: $text-light;
     margin-left: 20px;
     &:hover {
-      color: rgba(255, 255, 255, 0.5);
-      border: 1px solid rgba(255, 255, 255, 0.5);
+      // color: rgba(255, 255, 255, 0.5);
+      // border: 1px solid rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.1);
       transition: all 0.3s ease;
+    }
+    &:active {
+      background: rgba(255, 255, 255, 1);
+      color: $text;
     }
   }
   &__mob-conten {
