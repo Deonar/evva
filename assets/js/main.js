@@ -32,10 +32,10 @@ jQuery(document).ready(function ($) {
     return false;
   });
   // ======================== MASK
-  $('.mask-phone').mask('+7 (999) 999-99-99');
+  $('.mask-phone').mask('+7 999 999-99-99');
 
   $('#client-phone').on('blur input', function () {
-    if ($(this).val().length >= 18) {
+    if ($(this).val().length >= 16) {
       $(this).closest('.form-input__wrapp').removeClass('--error');
     } else {
       $(this).closest('.form-input__wrapp').addClass('--error');
@@ -72,24 +72,29 @@ jQuery(document).ready(function ($) {
   //======================== SLICK SLIDERS
   //===========================  front-page Slider
 
-  $('#panel-left-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '#panel-slider',
-  });
-
-  $('#panel-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    cssEase: 'linear',
+  $('#products-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    infinite: false,
     prevArrow: '<button class="slider-btn slider-btn__prev"><span></span></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"><span></span></button>',
-    fade: true,
-    dots: true,
-    infinite: false,
-    asNavFor: '#panel-left-slider',
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   //Wow

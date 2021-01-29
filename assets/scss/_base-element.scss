@@ -26,6 +26,7 @@
   &:focus {
     outline: none;
   }
+
   &_hover {
     position: relative;
     overflow: hidden;
@@ -40,7 +41,7 @@
       position: absolute;
       top: 0;
       transform: skewX(-45deg);
-      left: -90px;
+      left: -900px;
     }
     &:hover {
       // transform: scale(1.1)
@@ -76,5 +77,84 @@
     font-size: 38px;
     line-height: 40px;
     color: $text-light;
+  }
+}
+
+.primary-sub__title {
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-gray;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0 0 3px 3px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  outline: none;
+  span {
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+    outline: none;
+    // background-color: rgba(0, 0, 0, 0.1);
+  }
+  &.slick-disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+    &:hover {
+      opacity: 0.5;
+      background: none;
+    }
+  }
+}
+.slider-btn__prev {
+  transform: translateY(-50%) rotate(45deg);
+  left: -50px;
+  z-index: 10;
+}
+.slider-btn__next {
+  transform: translateY(-50%) rotate(225deg);
+  right: -50px;
+}
+
+.slider-btn--effect-boris::after {
+  background: rgba(111, 148, 182, 0.1);
+}
+
+.slider-btn--effect-boris.cbutton--click::after {
+  animation: anim-effect-boris 0.3s forwards;
+}
+
+@keyframes anim-effect-boris {
+  0% {
+    transform: scale3d(0.3, 0.3, 1);
+  }
+
+  25%,
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+
+    transform: scale3d(1.2, 1.2, 1);
   }
 }
