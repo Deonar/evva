@@ -228,7 +228,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
-  color: #797979;
+  color: #070707;
 }
 
 .color-gold {
@@ -963,6 +963,7 @@ body {
 
 .main__text {
   max-width: 315px;
+  color: #797979;
 }
 
 .main__btn-wrapper .btn:first-child {
