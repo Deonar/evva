@@ -4,12 +4,12 @@
   padding-bottom: 100px;
   min-height: 720px;
   position: relative;
-  &__motion{
+  &__motion {
     position: absolute;
     left: 50%;
     bottom: 0;
     z-index: 5;
-    &_mob{
+    &_mob {
       display: none;
       margin: auto;
     }
@@ -31,16 +31,15 @@
     margin-bottom: 10px;
     color: #fff;
   }
-  &__text{
+  &__text {
     max-width: 315px;
     color: $text-gray;
   }
-  &__btn-wrapper{
-    .btn:first-child{
+  &__btn-wrapper {
+    .btn:first-child {
       margin-right: 15px;
     }
   }
-  
 }
 
 .privacy-policy {
@@ -125,7 +124,7 @@
         line-height: 22px;
         color: #818181;
         &::after {
-          content: "-";
+          content: '-';
           position: absolute;
           left: 0;
           top: 50%;
@@ -209,7 +208,7 @@
   &-input__wrapp {
     position: relative;
     transition: all 0.3s ease;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     &.--error {
       .form-input {
         &__line {
@@ -335,7 +334,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 263px;
+    min-height: 233px;
     img {
       display: block;
       margin-bottom: 45px;
@@ -456,7 +455,11 @@
 }
 
 .prices {
+  overflow: hidden;
   padding: 60px 0 120px 0;
+  .products__text p {
+    max-width: 600px;
+  }
   &-cards {
     display: flex;
     flex-wrap: wrap;
@@ -482,6 +485,10 @@
         color: $text-light;
       }
       .prices-card__content-blocks {
+        border-top: 1px solid #121212;
+      }
+      .prices-card__more {
+        border-bottom: 1px solid #121212;
         border-top: 1px solid #121212;
       }
     }
@@ -578,6 +585,33 @@
     width: 100%;
     text-align: center;
     display: block;
+  }
+  &-card__more {
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 30px 0;
+    margin: 30px 0;
+    color: $text-gray;
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-bottom: 2px solid $text-gray;
+      border-left: 2px solid $text-gray;
+      transform: translate(0, -2px) rotate(-45deg);
+      margin-left: 15px;
+      transition: all 0.3s ease;
+    }
+  }
+  &-card__accordion.active .prices-card__more::after {
+    transform: translate(0, 4px) rotate(-225deg);
+    transition: all 0.3s ease;
   }
   &-desc {
     background: #f5f5f5;

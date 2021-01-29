@@ -97,6 +97,23 @@ jQuery(document).ready(function ($) {
     ],
   });
 
+  if ($(window).innerWidth() <= 768) {
+    $('.accordion-js').on('click', function () {
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).parent().find('.accordion-block-js').hide(200);
+        $('.prices-card__more').text('Cвернуть');
+        $(this).parent().find('.prices-card__more').text('Что входит в тариф');
+      } else {
+        $('.accordion-js').removeClass('active');
+        $(this).addClass('active');
+        $('.accordion-block-js').slideUp(200);
+        $(this).parent().find('.accordion-block-js').toggle('blind');
+        $('.prices-card__more').text('Что входит в тариф');
+        $(this).parent().find('.prices-card__more').text('Cвернуть');
+      }
+    });
+  }
   //Wow
   new WOW().init();
 });
