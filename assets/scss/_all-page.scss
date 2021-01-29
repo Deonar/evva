@@ -1,8 +1,45 @@
-.main{
+.main {
   background-color: #000000;
   padding-top: 300px;
   padding-bottom: 100px;
   min-height: 720px;
+  position: relative;
+  &__motion{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: 5;
+    &_mob{
+      display: none;
+      margin: auto;
+    }
+  }
+  &-content {
+    position: relative;
+    z-index: 10;
+    max-width: 650px;
+  }
+  .big-title-light {
+    margin-bottom: 30px;
+  }
+  &__sub-title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  &__text{
+    max-width: 315px;
+  }
+  &__btn-wrapper{
+    .btn:first-child{
+      margin-right: 15px;
+    }
+  }
+  
 }
 
 .privacy-policy {
@@ -87,7 +124,7 @@
         line-height: 22px;
         color: #818181;
         &::after {
-          content: '-';
+          content: "-";
           position: absolute;
           left: 0;
           top: 50%;
@@ -97,5 +134,3 @@
     }
   }
 }
-
-

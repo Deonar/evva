@@ -3,7 +3,11 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
-  color: $text;
+  color: $text-gray;
+}
+
+.color-gold{
+  color: $gold;
 }
 
 .container {
@@ -16,6 +20,7 @@ body {
 .w-100 {
   width: 100%;
 }
+
 .overflow-h {
   overflow: hidden !important;
 }

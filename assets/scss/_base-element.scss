@@ -52,6 +52,7 @@
 }
 .gold-btn {
   background: #e5c584;
+  color: $black-2;
 }
 .gray-btn {
   background-color: #202020;
@@ -63,9 +64,6 @@
   font-size: 56px;
   line-height: 60px;
   &-light {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;
     color: $text-light;
   }
 }
