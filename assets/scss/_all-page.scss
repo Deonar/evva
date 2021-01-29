@@ -316,15 +316,6 @@
 .products {
   padding: 80px 0;
   background: #f5f5f5;
-  &-title {
-    margin-bottom: 25px;
-  }
-  &-sub__title {
-    font-size: 16px;
-    line-height: 22px;
-    color: $text-gray;
-    margin-bottom: 50px;
-  }
   &-slider {
     margin: 0 -7px;
     position: relative;
@@ -381,7 +372,7 @@
     line-height: 28px;
     color: $gold;
   }
-  &-slider__text {
+  &__text {
     margin-top: 30px;
     padding-top: 30px;
     margin-bottom: 80px;
@@ -416,5 +407,191 @@
     font-size: 14px;
     line-height: 18px;
     color: $text-gray;
+  }
+}
+
+.prices {
+  padding: 60px 0 120px 0;
+  &-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 14px);
+    margin: 0 -7px -15px -7px;
+  }
+  &-card {
+    padding: 40px;
+    background: #f5f5f5;
+    width: calc(33.3333% - 14px);
+    margin: 0 7px 15px 7px;
+    border-radius: 10px;
+    align-self: baseline;
+    &._black {
+      background: #070707;
+      .prices-card__title {
+        color: $text-light;
+        span {
+          display: block !important;
+        }
+      }
+      .prices-card__content-item {
+        color: $text-light;
+      }
+      .prices-card__content-blocks {
+        border-top: 1px solid #121212;
+      }
+    }
+  }
+  &-card__title {
+    position: relative;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    span {
+      display: none;
+      margin-top: 5px;
+      width: 100%;
+      text-align: center;
+      color: $gold;
+      font-size: 16px;
+      line-height: 22px;
+      position: absolute;
+      bottom: 0%;
+      transform: translateY(100%);
+    }
+  }
+  &-card__price {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: $gold;
+    margin-bottom: 20px;
+    text-align: center;
+    span {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 16px;
+      color: $gold;
+    }
+  }
+  &-card__sub-price {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+  }
+  &-card__content-blocks {
+    padding-top: 30px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    border-top: 1px solid #e7e7e7;
+  }
+  &-card__content-block {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &-card__content-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: $text-gray;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  &-card__content-list {
+  }
+  &-card__content-item {
+    position: relative;
+    display: block;
+    padding-left: 45px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 10px;
+      background: url(../img/icons/check-icon.svg) center center no-repeat;
+      background-size: contain;
+    }
+  }
+  &-card__btn {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  &-desc {
+    background: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+  }
+  &-desc__body {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 80px;
+  }
+  &-desc__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+  &-desc__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-gray;
+  }
+  &-desc__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 84px);
+    margin: 0 -42px -60px -42px;
+  }
+  &-desc__item {
+    position: relative;
+    width: calc(33.3333% - 84px);
+    margin: 0 42px 60px 42px;
+    &:last-child .prices-desc__or {
+      display: none;
+    }
+  }
+  &-desc__item-icon {
+    margin-bottom: 20px;
+  }
+  &-desc__item-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+  &-desc__item-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+  }
+  &-desc__or {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(195%);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
