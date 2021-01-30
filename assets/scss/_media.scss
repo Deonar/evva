@@ -136,7 +136,6 @@
   // Main //
   .main {
     padding-top: 0;
-    margin-bottom: 50px;
     &__motion {
       position: static;
       max-width: 700px;
@@ -153,7 +152,29 @@
       margin: auto;
     }
   }
-
+  .staff {
+    &-body {
+      flex-wrap: wrap;
+    }
+    &-block__title {
+      max-width: 100%;
+      padding-top: 0px;
+      padding-bottom: 50px;
+    }
+    &-text {
+      width: 100%;
+      max-width: 400px;
+    }
+    &-block__img {
+      margin-left: 0;
+      margin-right: 50px;
+      width: calc(35% - 60px);
+    }
+    &-block__opportunities {
+      width: 65%;
+      max-width: 450px;
+    }
+  }
   .main-form {
     &__row {
     }
@@ -205,6 +226,13 @@
     }
   }
 }
+@media (max-width: 900px) {
+  .applying {
+    &-list__item {
+      width: calc(33.333% - 30px);
+    }
+  }
+}
 @media (max-width: 767px) {
   .primary-title {
     font-weight: bold;
@@ -233,6 +261,77 @@
       padding: 35px;
     }
   }
+  .applying {
+    padding-top: 60px;
+    &-title {
+      text-align: center;
+    }
+    &-list {
+      margin: 0 -15px -40px -15px;
+    }
+    &-list__item {
+      width: calc(50% - 30px);
+      margin: 0 15px 40px 15px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-name {
+      padding-top: 15px;
+      padding-left: 0px;
+      text-align: center;
+    }
+
+    &-now__title {
+      text-align: center;
+    }
+    &-now__list {
+      width: 100%;
+      margin: 0;
+    }
+    &-now__list-item {
+      width: 50%;
+      margin: 0 0 30px 0;
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 100px;
+        height: auto;
+      }
+    }
+  }
+  .staff {
+    &-block__title {
+      padding: 0px;
+      max-width: 100%;
+      margin-bottom: 80px;
+      order: 2;
+    }
+    &-block__img {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 0 50px 0;
+      order: 1;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &-block__opportunities {
+      width: 100%;
+      max-width: 100%;
+      order: 3;
+    }
+
+    &-block__opportunities-list {
+      margin: 0 -7px -50px -7px;
+    }
+    &-block__opportunities-item {
+      width: calc(100% - 14px);
+      margin: 0 7px 50px 7px;
+      max-width: 100%;
+    }
+  }
   .products {
     &-card {
       height: 550px;
@@ -247,6 +346,10 @@
   }
   .prices {
     padding: 60px 0 80px 0;
+    &-title,
+    &-sub__title {
+      text-align: center;
+    }
     &-cards {
       width: calc(100% + 84px);
       margin: 0 -42px -15px -42px;
