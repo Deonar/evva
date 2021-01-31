@@ -107,8 +107,8 @@ jQuery(document).ready(function ($) {
       } else {
         $('.accordion-js').removeClass('active');
         $(this).addClass('active');
-        $('.accordion-block-js').slideUp(200);
-        $(this).parent().find('.accordion-block-js').toggle('blind');
+        $('.accordion-block-js').slideUp(100);
+        $(this).parent().find('.accordion-block-js').show('blind');
         $('.prices-card__more').text('Что входит в тариф');
         $(this).parent().find('.prices-card__more').text('Cвернуть');
       }
@@ -116,7 +116,6 @@ jQuery(document).ready(function ($) {
   }
   //Wow
   new WOW().init();
-
 
   //Accordion
   $('.accordion-tab-js').on('click', function () {

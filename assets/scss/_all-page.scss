@@ -1104,3 +1104,40 @@
     line-height: 20px;
   }
 }
+.page-404 {
+  padding-top: 180px;
+  padding-bottom: 120px;
+  min-height: calc(100vh - 331px);
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__content {
+    margin-bottom: 80px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 60px;
+    margin-bottom: 25px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-gray;
+    margin-bottom: 50px;
+  }
+  &__btn {
+    background: rgba(7, 7, 7, 0.1);
+  }
+  &__img {
+    width: 100%;
+    max-width: 750px;
+    margin-left: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
