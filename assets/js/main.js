@@ -120,16 +120,24 @@ jQuery(document).ready(function ($) {
   new WOW().init();
 
   //Accordion
-  $('.accordion-tab-js').on('click', function () {
-    if ($(this).closest('.accordion-js').hasClass('active')) {
-      $(this).closest('.accordion-js').removeClass('active');
-      $(this).closest('.accordion-js').find('.accordion-content-js').slideUp(300);
+  $('.accordion-tab-js').click( function (event) {
+    event.stopPropagation();
+    if ($(this).closest('.accordion-wrapper-js').hasClass('active')) {
+      $(this).closest('.accordion-wrapper-js').removeClass('active');
+      $(this).closest('.accordion-wrapper-js').find('.accordion-content-js').slideUp(300);
     } else {
-      $('.accordion-js').removeClass('active');
-      $(this).closest('.accordion-js').addClass('active');
+      $('.accordion-wrapper-js').removeClass('active');
       $('.accordion-content-js').slideUp(300);
-      $(this).closest('.accordion-js').find('.accordion-content-js').slideDown(300);
+      $(this).closest('.accordion-wrapper-js').addClass('active');
+      $(this).closest('.accordion-wrapper-js').find('.accordion-content-js').slideDown(300);
     }
+
+    $('html').animate(
+      {
+        scrollTop: $(this).offset().top - 150,
+      },
+      400
+    );
   });
 
   /*-------------------------------------
