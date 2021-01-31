@@ -571,6 +571,7 @@ body {
   z-index: 999;
   width: 100%;
   transition: all 0.5s ease;
+  background-color: #000000;
 }
 
 .header.active {
@@ -1288,7 +1289,7 @@ body {
   margin-top: 25px;
   font-size: 16px;
   line-height: 22px;
-  color: #e5e5e5;
+  color: #797979;
 }
 
 .main-form__body {
@@ -1512,6 +1513,7 @@ body {
 
 .products-slider__item {
   padding: 0 7px;
+  outline: none;
 }
 
 .products-card {
@@ -2083,7 +2085,7 @@ body {
 }
 
 .footer-tel {
-  display: block;
+  display: inline-block;
   margin-bottom: 25px;
   font-weight: bold;
   font-size: 38px;

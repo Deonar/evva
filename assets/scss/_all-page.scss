@@ -446,7 +446,7 @@
       margin-top: 25px;
       font-size: 16px;
       line-height: 22px;
-      color: $gray;
+      color: $text-gray;
     }
   }
   &__body {
@@ -657,6 +657,7 @@
   }
   &-slider__item {
     padding: 0 7px;
+    outline: none;
   }
   &-card {
     height: 500px;
