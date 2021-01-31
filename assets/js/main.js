@@ -119,7 +119,7 @@ jQuery(document).ready(function ($) {
 
 
   //Accordion
-  $('.accordion-tab-js').on('click',function () {
+  $('.accordion-tab-js').on('click', function () {
     if ($(this).closest('.accordion-js').hasClass('active')) {
       $(this).closest('.accordion-js').removeClass('active');
       $(this).closest('.accordion-js').find('.accordion-content-js').hide('300');
