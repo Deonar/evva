@@ -135,7 +135,7 @@
     }
     &__close {
       width: 18px;
-      height: 9px;
+      height: 18px;
       position: relative;
       transform: rotate(0deg);
       transition: 0.5s ease-in-out;
@@ -152,11 +152,11 @@
         transition: 0.25s ease-in-out;
         &:nth-child(1) {
           top: 0;
-          transform: translateY(3px) rotate(135deg);
+          transform: translateY(8px) rotate(135deg);
         }
         &:nth-child(2) {
           bottom: 0;
-          transform: translateY(-4px) rotate(-135deg);
+          transform: translateY(-8px) rotate(-135deg);
         }
       }
     }
