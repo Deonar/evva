@@ -114,6 +114,28 @@
         left: 0;
         visibility: visible;
         z-index: 1000;
+        .header {
+          &-menu li a {
+            color: $text-light;
+            &:hover {
+              color: rgba(255, 255, 255, 0.5);
+            }
+          }
+          &-btn {
+            border: 1px solid rgba(255, 255, 255, 1);
+            color: $text-light;
+            &:hover {
+              background: rgba(255, 255, 255, 0.1);
+            }
+            &:active {
+              background: rgba(255, 255, 255, 1);
+              color: $text;
+            }
+          }
+          &-burger span {
+            background-color: $white;
+          }
+        }
       }
     }
     &-menu {
