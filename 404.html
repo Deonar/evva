@@ -2,16 +2,129 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- <base href="/"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" href="assets/libs/slick/slick.css" />
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/libs/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/css/main.css?v=128" />
+
+    <link rel="icon" type="image/png" href="icons/favicon.png" />
+    <link rel="icon" type="image/png" href="icons/favicon.png" />
     <title>EVVA</title>
   </head>
-
   <body>
+    <header id="header" class="header light">
+      <div class="header-container">
+        <div class="header-body">
+          <div class="header-burger__wrapper" id="header-burger">
+            <div class="header-burger">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <a href="/" class="header-logo">
+            <img src="assets/img/logo.svg" alt="" />
+          </a>
+          <div id="mobMenu" class="header-menu__wrapp">
+            <div class="header-menu__head">
+              <div class="header-menu__title">Меню</div>
+              <div class="header-menu__close close-mob-menu-js">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <ul class="header-menu">
+              <li><a class="close-mob-menu-js scrollto" href="#">Что такое EVVA</a></li>
+              <li><a class="close-mob-menu-js scrollto" href="#">Чем полезна EVVA</a></li>
+              <li><a class="close-mob-menu-js scrollto" href="#">Где можно применить</a></li>
+              <li><a class="close-mob-menu-js scrollto" href="#">Продукция EVVA</a></li>
+              <li><a class="close-mob-menu-js scrollto" href="#">Сколько стоит EVVA</a></li>
+            </ul>
+            <a href="#" class="header-btn header__mob-conten close-mob-menu-js">Войти</a>
+          </div>
+          <div class="header-options">
+            <div class="header-contact">
+              <a href="tel:+88007894411" class="contact-tell">
+                8 800 789-44-11
+                <img src="assets/img/icons/tell.svg" alt="" />
+              </a>
+            </div>
+            <a href="#" class="header-btn btn">Войти</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-404">
+      <div class="container">
+        <div class="page-404__body">
+          <div class="page-404__content">
+            <div class="page-404__title">
+              Этой страницы <br />
+              не существует :(
+            </div>
+            <div class="page-404__text">
+              Нажмите “Вернуться назад”, чтобы перейти <br />
+              на предыдущую страницу.
+            </div>
+            <a href="/" class="page-404__btn btn btn_hover">Вернуться назад</a>
+          </div>
+          <div class="page-404__img">
+            <img src="assets/img/404.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <a href="tel:88007894411" class="footer-tel">8 800 789-44-11</a>
+        <div class="footer-row">
+          <div class="footer-app">
+            <div class="footer-app__title">приложение для персонала</div>
+            <div class="footer-app__list">
+              <a href="#" class="footer-app__link">
+                <img src="assets/img/google-play.png" alt="" />
+              </a>
+              <a href="#" class="footer-app__link">
+                <img src="assets/img/app-store.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-information">
+            <div class="footer-information__title">Правовая информация</div>
+            <ul class="footer-information__list">
+              <li class="footer-information__item"><a href="#" class="footer-iformation__link">Договор оферты</a></li>
+              <li class="footer-information__item"><a href="#" class="footer-iformation__link">Пользовательское соглашение </a></li>
+              <li class="footer-information__item"><a href="#" class="footer-iformation__link">Коротко о важном </a></li>
+              <li class="footer-information__item"><a href="#" class="footer-iformation__link">Политика конфиденциальности </a></li>
+              <li class="footer-information__item"><a href="#" class="footer-iformation__link">Лицензионное соглашение </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-protection">ООО «Ева», 2021. Все права защищены.</div>
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="/404.html" class="footer-social__link social__vk" target="_blank">
+                <svg>
+                  <use xlink:href="assets/img/icons/vk-icon.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="/404.html" class="footer-social__link social__inst" target="_blank">
+                <svg>
+                  <use xlink:href="assets/img/icons/inst-icon.svg#inst-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/libs/slick/slick.min.js"></script>
     <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>

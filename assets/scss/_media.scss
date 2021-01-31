@@ -7,6 +7,21 @@
       padding: 0 10px;
     }
   }
+  .page-404 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &__content {
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__img {
+      max-width: 650px;
+    }
+  }
 }
 
 @media (max-width: 1350px) {
@@ -250,6 +265,8 @@
       font-size: 24px;
       line-height: 24px;
     }
+    &__wrapper {
+    }
     &__lists {
       display: block;
     }
@@ -452,6 +469,7 @@
       padding-top: 0px;
       margin-top: 0px;
       border-top: none;
+      min-width: 100%;
     }
     &-desc {
       padding: 40px;
@@ -473,6 +491,90 @@
   .form {
     &-thank {
       min-height: 230px;
+    }
+  }
+  .privacy-policy {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    &__title {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    &__contents {
+      padding: 35px;
+      flex-direction: column;
+      margin: 0 -35px;
+      margin-bottom: 50px;
+    }
+    &__contents-title {
+      font-size: 24px;
+      line-height: 24px;
+      margin-right: 0px;
+      margin-bottom: 25px;
+      max-width: 120px;
+    }
+    &__contents-list {
+    }
+    &__contents-item {
+      max-width: 100%;
+    }
+    &__menu-body {
+      display: none;
+    }
+    &__content {
+      max-width: 100%;
+      margin-right: 0;
+    }
+    &__paragraph {
+      padding-top: 50px;
+      &:first-child {
+        padding-top: 0;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+      }
+      strong {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      b {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      a {
+        font-size: 14px;
+        line-height: 19px;
+      }
+      ul {
+        li {
+          padding-left: 35px;
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .page-404 {
+    min-height: auto;
+    &__content {
+      margin-bottom: 80px;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &__img {
+      max-width: 300px;
+      margin: 0 auto;
     }
   }
   .footer {

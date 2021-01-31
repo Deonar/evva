@@ -22,6 +22,14 @@
     top: -100%;
     transition: all 0.3s;
   }
+  &.light {
+    background: #070707;
+    .header {
+      &-container {
+        padding: 18px 35px;
+      }
+    }
+  }
   &.h-fixed {
     .header {
       &-container {
