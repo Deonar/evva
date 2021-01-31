@@ -71,7 +71,9 @@
   }
 }
 .play-btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   background-color: $gold;
@@ -127,6 +129,8 @@
     }
   }
   &__btn {
+    display: flex;
+    align-items: center;
     color: #fff;
     position: relative;
     margin-bottom: 30px;
@@ -144,6 +148,7 @@
   background-color: $black;
   padding: 80px 0;
   &__sub-title {
+    font-weight: 700;
     color: #ffffff;
     font-size: 24px;
     line-height: 24px;
@@ -151,10 +156,9 @@
   }
 }
 .guest-info {
-  &__wrapper {
-    .accordion-content-js {
-      display: none;
-    }
+  margin-bottom: 80px;
+  .accordion-content-js {
+    display: none;
   }
   &__item {
     border-bottom: 1px solid #e7e7e7;
@@ -274,6 +278,61 @@
     font-size: 16px;
     line-height: 20px;
     margin-right: 20px;
+  }
+}
+
+.shop-info {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background: #121212;
+    border-radius: 10px;
+    padding: 40px;
+    flex: 0 0 49%;
+    max-width: 49%;
+    min-height: 480px;
+  }
+  &__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+    background: #202020;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #fff;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+    max-width: 470px;
+    margin-bottom: 30px;
+  }
+  &__img {
+    margin-top: auto;
+    img{
+      max-width: 100%;
+    }
   }
 }
 
