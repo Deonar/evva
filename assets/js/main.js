@@ -131,13 +131,6 @@ jQuery(document).ready(function ($) {
       $(this).closest('.accordion-wrapper-js').addClass('active');
       $(this).closest('.accordion-wrapper-js').find('.accordion-content-js').slideDown(300);
     }
-
-    $('html').animate(
-      {
-        scrollTop: $(this).offset().top - 150,
-      },
-      400
-    );
   });
 
   /*-------------------------------------
