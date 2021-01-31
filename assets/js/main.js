@@ -29,7 +29,13 @@ jQuery(document).ready(function ($) {
     return false;
   });
   // ======================== MASK
-  $('.mask-phone').mask('+7 999 999-99-99');
+  $('.mask-phone').mask('+7 (ZZZ) ZZZ-ZZ-ZZ', {
+    translation: {
+      'Z': {
+        pattern: /[0-9]/,
+      }
+    }
+  });
 
   $('#client-phone').on('blur input', function () {
     if ($(this).val().length >= 16) {
@@ -125,7 +131,6 @@ jQuery(document).ready(function ($) {
       $(this).closest('.accordion-js').find('.accordion-content-js').slideDown(300);
     }
   });
-
 
   /*-------------------------------------
 		PlayBTN
