@@ -901,6 +901,7 @@ body {
   padding-bottom: 100px;
   min-height: 720px;
   position: relative;
+  overflow: hidden;
 }
 
 .main__motion {
@@ -1567,6 +1568,7 @@ body {
 .products {
   padding: 80px 0;
   background: #f5f5f5;
+  overflow: hidden;
 }
 
 .products-slider {
@@ -1773,14 +1775,20 @@ body {
   display: none;
   margin-top: 5px;
   width: 100%;
+  font-weight: 400;
   text-align: center;
   color: #e5c584;
   font-size: 16px;
   line-height: 22px;
   position: absolute;
+<<<<<<< HEAD
+  bottom: -5px;
+  transform: translateY(100%);
+=======
   bottom: 0%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+>>>>>>> 3dfabd80bf08d268013c2cc0ce4b7a50ea212c7e
 }
 
 .prices-card__price {
@@ -1829,6 +1837,7 @@ body {
   line-height: 14px;
   color: #797979;
   margin-bottom: 30px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -1857,6 +1866,11 @@ body {
   width: 15px;
   height: 10px;
   background: url(../img/icons/check-icon.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.prices-card__content-item._heart-icon::after {
+  background: url(../img/icons/heart-icon.svg) center center no-repeat;
   background-size: contain;
 }
 
@@ -1974,6 +1988,160 @@ body {
   right: 0;
   -webkit-transform: translateX(195%);
           transform: translateX(195%);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.applying {
+  overflow: hidden;
+  padding: 120px 0 60px 0;
+}
+
+.applying-title {
+  margin-bottom: 50px;
+}
+
+.applying-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 30px);
+  margin: 0 -15px -30px -15px;
+  padding-bottom: 50px;
+}
+
+.applying-list__item {
+  width: calc(25% - 30px);
+  margin: 0 15px 30px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.applying-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  background: #e5c584;
+}
+
+.applying-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 20px;
+}
+
+.applying-now {
+  padding-top: 50px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.applying-now__title {
+  margin-bottom: 30px;
+  color: #797979;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.applying-now__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: -15px -10px;
+}
+
+.applying-now__list-item {
+  margin: 15px 10px;
+}
+
+.staff {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.staff-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff-block__title {
+  padding-top: 80px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.staff-title {
+  margin-bottom: 25px;
+}
+
+.staff-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #797979;
+  margin-bottom: 50px;
+}
+
+.staff-list__app {
+  display: flex;
+  align-items: center;
+}
+
+.staff-app {
+  margin-right: 10px;
+}
+
+.staff-app:last-child {
+  margin-right: 0;
+}
+
+.staff-block__img {
+  width: 100%;
+  max-width: 310px;
+  margin: 0 60px;
+}
+
+.staff-block__img img {
+  width: 100%;
+  height: auto;
+}
+
+.staff-block__opportunities-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #797979;
+  margin-bottom: 50px;
+}
+
+.staff-block__opportunities-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 14px);
+  margin: 0 -7px -30px -7px;
+}
+
+.staff-block__opportunities-item {
+  width: calc(50% - 14px);
+  margin: 0 7px 30px 7px;
+  max-width: 200px;
+}
+
+.staff-block__opportunities-icon {
+  margin-bottom: 30px;
+}
+
+.staff-block__opportunities-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -2332,6 +2500,28 @@ body {
   .main-content {
     margin: auto;
   }
+<<<<<<< HEAD
+  .staff-body {
+    flex-wrap: wrap;
+  }
+  .staff-block__title {
+    max-width: 100%;
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .staff-text {
+    width: 100%;
+    max-width: 400px;
+  }
+  .staff-block__img {
+    margin-left: 0;
+    margin-right: 50px;
+    width: calc(35% - 60px);
+  }
+  .staff-block__opportunities {
+    width: 65%;
+    max-width: 450px;
+=======
   .about {
     padding: 100px 0;
   }
@@ -2341,6 +2531,7 @@ body {
   }
   .about__wrapper {
     display: block;
+>>>>>>> 3dfabd80bf08d268013c2cc0ce4b7a50ea212c7e
   }
   .main-form__title {
     max-width: 100%;
@@ -2398,6 +2589,12 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .applying-list__item {
+    width: calc(33.333% - 30px);
+  }
+}
+
 @media (max-width: 767px) {
   .about__colums {
     display: block;
@@ -2440,6 +2637,72 @@ body {
     width: 100%;
     padding: 35px;
   }
+  .applying {
+    padding-top: 60px;
+  }
+  .applying-title {
+    text-align: center;
+  }
+  .applying-list {
+    margin: 0 -15px -40px -15px;
+  }
+  .applying-list__item {
+    width: calc(50% - 30px);
+    margin: 0 15px 40px 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .applying-name {
+    padding-top: 15px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .applying-now__title {
+    text-align: center;
+  }
+  .applying-now__list {
+    width: 100%;
+    margin: 0;
+  }
+  .applying-now__list-item {
+    width: 50%;
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .applying-now__list-item img {
+    max-width: 100px;
+    height: auto;
+  }
+  .staff-block__title {
+    padding: 0px;
+    max-width: 100%;
+    margin-bottom: 80px;
+    order: 2;
+  }
+  .staff-block__img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 50px 0;
+    order: 1;
+  }
+  .staff-block__img img {
+    width: 100%;
+    height: auto;
+  }
+  .staff-block__opportunities {
+    width: 100%;
+    max-width: 100%;
+    order: 3;
+  }
+  .staff-block__opportunities-list {
+    margin: 0 -7px -50px -7px;
+  }
+  .staff-block__opportunities-item {
+    width: calc(100% - 14px);
+    margin: 0 7px 50px 7px;
+    max-width: 100%;
+  }
   .products-card {
     height: 550px;
   }
@@ -2452,6 +2715,9 @@ body {
   }
   .prices {
     padding: 60px 0 80px 0;
+  }
+  .prices-title, .prices-sub__title {
+    text-align: center;
   }
   .prices-cards {
     width: calc(100% + 84px);
