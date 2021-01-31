@@ -301,6 +301,15 @@
       width: 100%;
     }
   }
+
+  .shop-info {
+    display: block;
+    &__item {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  }
 }
 @media (max-width: 767px) {
   .about {
@@ -619,6 +628,19 @@
     width: 20px;
     height: 20px;
   }
+
+  .shop-info {
+    display: block;
+    &__title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    &__item {
+      padding: 25px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 @media (max-width: 360px) {
@@ -626,6 +648,12 @@
     padding: 0 25px;
   }
   .guest-info {
+    &__title {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+  .shop-info {
     &__title {
       font-size: 18px;
       line-height: 18px;

@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="assets/libs/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/css/main.css?v=128" />
 
-    <link rel="icon" type="image/png" href="icons/favicon.png" />
-    <link rel="icon" type="image/png" href="icons/favicon.png" />
+    <link rel="icon" href="/assets/img/favicon.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/img/favicon.png" />
+    <meta name="msapplication-TileImage" content="/assets/img/favicon.png" />
+    <meta property="og:image" content="/assets/img/placeholder.jpg" />
+    <link rel="image_src" href="/assets/img/placeholder.jpg" />
+
     <title>EVVA</title>
   </head>
   <body>
@@ -110,7 +114,7 @@
       </div>
 
       <div class="video-block video-js">
-        <div class="video-block-preview-mob" style="assets/img/video-block.jpg"></div>
+        <div class="video-block-preview-mob"></div>
 
         <div class="video-block-preview">
           <video data-src="https://www.w3schools.com/howto/rain.mp4" class="" autoplay="" muted="" loop="">
@@ -119,11 +123,11 @@
         </div>
         <div class="video-block-text">
           <div class="video-block__btn">
-            <button class="play-btn mr-20">
+            <a href="https://www.youtube.com/watch?v=FLDE9Pzdoy4&list=RDFLDE9Pzdoy4&start_radio=1&ab_channel=MaxKorzh" class="play-btn mr-20 dr-play-video">
               <svg class="triangle" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.14471 3.14023C7.89622 3.50469 7.89622 4.5753 7.14471 4.93977L1.43636 7.70817C0.772238 8.03025 -3.7358e-07 7.5465 -3.41316e-07 6.8084L-9.92949e-08 1.2716C-6.70312e-08 0.533496 0.772239 0.0497476 1.43637 0.371832L7.14471 3.14023Z" fill="#070707" />
               </svg>
-            </button>
+            </a>
             <span>Посмотреть видео</span>
           </div>
           <h2 class="big-title big-title-light">Посмотрите видео о сервисе EVVA SPACE</h2>
@@ -134,8 +138,8 @@
     <section id="what-can" class="what-can">
       <div class="container">
         <h2 class="primary-title-light">Что умеет EVVA?</h2>
-        <p class="what-can__sub-title">Для гостей заведения</p>
-        <div class="guest-info__wrapper">
+        <h3 class="what-can__sub-title">Для гостей заведения</h3>
+        <div class="guest-info">
           <div class="guest-info__item accordion-js active">
             <div class="guest-info__header accordion-tab-js">
               <div class="guest-info__icon_wrapper">
@@ -376,6 +380,38 @@
                   <img src="assets/img/what-can/percent.png" alt="#" />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="what-can__sub-title">Для заведения</h3>
+
+        <div class="shop-info">
+          <div class="shop-info__item">
+            <div class="shop-info__header">
+              <div class="shop-info__icon">
+                <img src="assets/img/what-can/analitics.svg" alt="" />
+              </div>
+              <h3 class="shop-info__title">Расширенная<br />аналитика</h3>
+            </div>
+            <p class="shop-info__text">Собирайте и анализируйте данные, полученные с каждого модуля системы EVVA, это поможет вам принимать правильные управленческие решения и вывести сервис на новый уровень!</p>
+            <div class="shop-info__img">
+              <img src="assets/img/what-can/analitics.png" alt="#" />
+            </div>
+          </div>
+          <div class="shop-info__item">
+            <div class="shop-info__header">
+              <div class="shop-info__icon">
+                <img src="assets/img/what-can/users.svg" alt="" />
+              </div>
+              <h3 class="shop-info__title">
+                Клиентская<br />
+                база
+              </h3>
+            </div>
+            <p class="shop-info__text">Собирайте и работайте с клиентской базой! Персональные и контактные данные, предпочтения и интересы ваших гостей помогут сделать для них предложение, от которого невозможно отказаться!</p>
+            <div class="shop-info__img">
+              <img src="assets/img/what-can/users.png" alt="#" />
             </div>
           </div>
         </div>
@@ -1034,6 +1070,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="assets/libs/slick/slick.min.js"></script>
     <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
     <script src="assets/libs/wow/wow.min.js"></script>
