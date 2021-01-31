@@ -122,12 +122,12 @@ jQuery(document).ready(function ($) {
   $('.accordion-tab-js').on('click', function () {
     if ($(this).closest('.accordion-js').hasClass('active')) {
       $(this).closest('.accordion-js').removeClass('active');
-      $(this).closest('.accordion-js').find('.accordion-content-js').hide('300');
+      $(this).closest('.accordion-js').find('.accordion-content-js').slideUp(300);
     } else {
       $('.accordion-js').removeClass('active');
       $(this).closest('.accordion-js').addClass('active');
-      $('.accordion-content-js').slideUp(200);
-      $(this).closest('.accordion-js').find('.accordion-content-js').toggle('blind');
+      $('.accordion-content-js').slideUp(300);
+      $(this).closest('.accordion-js').find('.accordion-content-js').slideDown(300);
     }
   });
 });
