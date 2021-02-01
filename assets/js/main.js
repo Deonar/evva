@@ -116,4 +116,18 @@ jQuery(document).ready(function ($) {
   }
   //Wow
   new WOW().init();
+
+
+  //Accordion
+  $('.accordion-tab-js').on('click', function () {
+    if ($(this).closest('.accordion-js').hasClass('active')) {
+      $(this).closest('.accordion-js').removeClass('active');
+      $(this).closest('.accordion-js').find('.accordion-content-js').hide('300');
+    } else {
+      $('.accordion-js').removeClass('active');
+      $(this).closest('.accordion-js').addClass('active');
+      $('.accordion-content-js').slideUp(200);
+      $(this).closest('.accordion-js').find('.accordion-content-js').toggle('blind');
+    }
+  });
 });
