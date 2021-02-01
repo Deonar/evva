@@ -10,9 +10,11 @@
     left: 50%;
     bottom: 0;
     z-index: 5;
-    &_mob {
-      display: none;
-      margin: auto;
+    video{
+      position: relative;
+      top: 60px;
+      display: block;
+      max-width: 100%;
     }
   }
   &-content {

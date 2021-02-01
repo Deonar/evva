@@ -1,4 +1,7 @@
 jQuery(document).ready(function ($) {
+
+  document.getElementsByTagName('video')[0].play();
+
   //Mob-menu
   $('#header-burger').on('click', function (e) {
     $(this).toggleClass('active');
@@ -134,13 +137,6 @@ jQuery(document).ready(function ($) {
       $(this).closest('.accordion-wrapper-js').addClass('active');
       $(this).closest('.accordion-wrapper-js').find('.accordion-content-js').slideDown(300);
     }
-
-    $('html').animate(
-      {
-        scrollTop: $(this).offset().top - 150,
-      },
-      400
-    );
   });
 
   /*-------------------------------------

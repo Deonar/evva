@@ -27,7 +27,7 @@
     background: #070707;
     .header {
       &-container {
-        padding: 18px 35px;
+        padding: 15px 35px;
       }
     }
   }
@@ -36,7 +36,7 @@
     background: #fff;
     .header {
       &-container {
-        padding: 18px 35px;
+        padding: 15px 35px;
       }
       &-logo {
         svg {
@@ -76,7 +76,7 @@
     position: relative;
     width: 100%;
     max-width: 2440px;
-    padding: 35px 50px;
+    padding: 30px 50px 10px;
     margin: 0 auto;
   }
   &-body {
