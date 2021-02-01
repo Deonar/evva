@@ -650,13 +650,7 @@ body {
 
 .header-logo {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
   align-items: center;
->>>>>>> b61302f5bec0dfebf7ea021a7d4536d5dd5371ac
   padding-top: 5px;
   margin-right: 112px;
 }
@@ -920,15 +914,9 @@ body {
 }
 
 .play-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   background-color: #e5c584;
@@ -988,12 +976,8 @@ body {
 }
 
 .video-block__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #fff;
   position: relative;
   margin-bottom: 30px;
@@ -1162,39 +1146,24 @@ body {
 }
 
 .shop-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .shop-info__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background: #121212;
   border-radius: 10px;
   padding: 40px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 49%;
-          flex: 0 0 49%;
+  flex: 0 0 49%;
   max-width: 49%;
   min-height: 480px;
 }
 
 .shop-info__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -1203,14 +1172,8 @@ body {
   height: 60px;
   background: #202020;
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-right: 20px;
 }
@@ -1535,7 +1498,7 @@ body {
   font-weight: 700;
   font-size: 38px;
   line-height: 40px;
-  color: #121212;
+  color: #d4d4d4;
   opacity: 1;
   background: transparent;
   font-family: "Helvetica", sans-serif;
@@ -1545,13 +1508,14 @@ body {
   font-weight: 700;
   font-size: 38px;
   line-height: 40px;
-  color: #121212;
+  color: #d4d4d4;
   opacity: 1;
   background: transparent;
   font-family: "Helvetica", sans-serif;
 }
 
 .form-input:focus {
+  color: #121212;
   background: transparent;
   transition: all 0.6s ease;
 }
@@ -1563,6 +1527,7 @@ body {
 }
 
 .form-input:hover {
+  color: #121212;
   transition: all 0.6s ease;
   border-bottom: 2px solid #e5c584;
 }
@@ -2045,12 +2010,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   width: 80px;
   height: 80px;
   min-width: 80px;
   min-height: 80px;
   border-radius: 50%;
   background: #e5c584;
+  transition: all 0.2s ease;
+}
+
+.applying-img:hover {
+  transform: scale(0.9);
+  transition: all 0.2s ease;
 }
 
 .applying-name {
@@ -2085,6 +2057,16 @@ body {
 
 .applying-now__list-item {
   margin: 15px 10px;
+}
+
+.applying-now__list-item img {
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.applying-now__list-item:hover img {
+  transition: all 0.3s ease;
+  filter: grayscale(0%);
 }
 
 .staff {
@@ -2394,10 +2376,10 @@ body {
 
 @media (max-width: 1350px) {
   .slider-btn__prev {
-    left: -32px;
+    left: -30px;
   }
   .slider-btn__next {
-    right: -32px;
+    right: -30px;
   }
 }
 
@@ -2445,6 +2427,7 @@ body {
     display: none;
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
   }
   .header-burger__wrapper {
     display: block;
@@ -2691,6 +2674,9 @@ body {
     font-size: 28px;
     line-height: 32px;
   }
+  .form-input__icon {
+    top: 35%;
+  }
   .main-form {
     padding: 80px 0 0 0;
   }
@@ -2834,7 +2820,7 @@ body {
     position: absolute;
     top: 100%;
     right: 50%;
-    transform: translateX(0%) translateY(230%);
+    transform: translateX(0%) translateY(135%);
   }
   .form-thank {
     min-height: 230px;

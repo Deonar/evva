@@ -15,12 +15,15 @@ jQuery(document).ready(function ($) {
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate({
-      scrollTop: $(href).offset().top,
-    }, {
-      duration: 370, // по умолчанию «400»
-      easing: 'linear', // по умолчанию «swing»
-    });
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top,
+      },
+      {
+        duration: 370, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top,
@@ -29,16 +32,16 @@ jQuery(document).ready(function ($) {
     return false;
   });
   // ======================== MASK
-  $('.mask-phone').mask('+7 (ZZZ) ZZZ-ZZ-ZZ', {
+  $('.mask-phone').mask('+7 ZZZ ZZZ-ZZ-ZZ', {
     translation: {
-      'Z': {
+      Z: {
         pattern: /[0-9]/,
-      }
-    }
+      },
+    },
   });
 
   $('#client-phone').on('blur input', function () {
-    if ($(this).val().length >= 16) {
+    if ($(this).val().length >= 14) {
       $(this).closest('.form-input__wrapp').removeClass('--error');
     } else {
       $(this).closest('.form-input__wrapp').addClass('--error');
@@ -79,10 +82,10 @@ jQuery(document).ready(function ($) {
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: false,
-    infinite: false,
     prevArrow: '<button class="slider-btn slider-btn__prev"><span></span></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"><span></span></button>',
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1100,
         settings: {
           slidesToShow: 2,
@@ -120,7 +123,7 @@ jQuery(document).ready(function ($) {
   new WOW().init();
 
   //Accordion
-  $('.accordion-tab-js').click( function (event) {
+  $('.accordion-tab-js').click(function (event) {
     event.stopPropagation();
     if ($(this).closest('.accordion-wrapper-js').hasClass('active')) {
       $(this).closest('.accordion-wrapper-js').removeClass('active');
@@ -147,10 +150,7 @@ jQuery(document).ready(function ($) {
     type: 'iframe',
     mainClass: 'mfp-with-zoom',
     iframe: {
-      markup: '<div class="mfp-iframe-scaler">' +
-        '<div class="mfp-close"></div>' +
-        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-        '</div>',
+      markup: '<div class="mfp-iframe-scaler">' + '<div class="mfp-close"></div>' + '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' + '</div>',
 
       patterns: {
         youtube: {
@@ -159,20 +159,19 @@ jQuery(document).ready(function ($) {
           // Or null - full URL will be returned
           // Or a function that should return %id%, for example:
           // id: function(url) { return 'parsed id'; }
-          src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+          src: '//www.youtube.com/embed/%id%?autoplay=1', // URL that will be set as a source for iframe.
         },
 
         vimeo: {
           index: 'vimeo.com/',
           id: '/',
-          src: '//player.vimeo.com/video/%id%?autoplay=1'
+          src: '//player.vimeo.com/video/%id%?autoplay=1',
         },
 
         gmaps: {
           index: '//maps.google.',
-          src: '%id%&output=embed'
-        }
-
+          src: '%id%&output=embed',
+        },
       },
       zoom: {
         enabled: true, // By default it's false, so don't forget to enable it
@@ -187,10 +186,10 @@ jQuery(document).ready(function ($) {
           // openerElement is the element on which popup was initialized, in this case its <a> tag
           // you don't need to add "opener" option if this code matches your needs, it's defailt one.
           return openerElement.is('img') ? openerElement : openerElement.find('img');
-        }
+        },
       },
 
       srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
-    }
+    },
   });
 });

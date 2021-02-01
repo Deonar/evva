@@ -294,7 +294,7 @@
     max-width: 49%;
     min-height: 480px;
   }
-  &__header{
+  &__header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -330,7 +330,7 @@
   }
   &__img {
     margin-top: auto;
-    img{
+    img {
       max-width: 100%;
     }
   }
@@ -612,7 +612,7 @@
       font-weight: 700;
       font-size: 38px;
       line-height: 40px;
-      color: $text;
+      color: #d4d4d4;
       opacity: 1;
       background: transparent;
       font-family: $base-font;
@@ -622,12 +622,13 @@
       font-weight: 700;
       font-size: 38px;
       line-height: 40px;
-      color: $text;
+      color: #d4d4d4;
       opacity: 1;
       background: transparent;
       font-family: $base-font;
     }
     &:focus {
+      color: $text;
       background: transparent;
       transition: all 0.6s ease;
       & + .form-input__line {
@@ -637,6 +638,7 @@
       }
     }
     &:hover {
+      color: $text;
       transition: all 0.6s ease;
       border-bottom: 2px solid $gold;
     }
@@ -1055,12 +1057,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 80px;
     height: 80px;
     min-width: 80px;
     min-height: 80px;
     border-radius: 50%;
     background: $gold;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(0.9);
+      transition: all 0.2s ease;
+    }
   }
   &-name {
     font-weight: bold;
@@ -1090,6 +1099,14 @@
   }
   &-now__list-item {
     margin: 15px 10px;
+    img {
+      transition: all 0.3s ease;
+      filter: grayscale(100%);
+    }
+    &:hover img {
+      transition: all 0.3s ease;
+      filter: grayscale(0%);
+    }
   }
 }
 

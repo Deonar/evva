@@ -26,10 +26,10 @@
 
 @media (max-width: 1350px) {
   .slider-btn__prev {
-    left: -32px;
+    left: -30px;
   }
   .slider-btn__next {
-    right: -32px;
+    right: -30px;
   }
 }
 @media (max-width: 1250px) {
@@ -80,6 +80,7 @@
       display: none;
       width: 100%;
       text-align: center;
+      margin-bottom: 20px;
     }
     &-burger__wrapper {
       display: block;
@@ -98,7 +99,6 @@
       right: 0;
       top: 0px;
       padding: 40px 35px;
-      padding-bottom: 60px;
       height: 100vh;
       width: 100%;
       max-width: 100%;
@@ -511,7 +511,7 @@
       position: absolute;
       top: 100%;
       right: 50%;
-      transform: translateX(0%) translateY(230%);
+      transform: translateX(0%) translateY(135%);
     }
   }
   .form {
