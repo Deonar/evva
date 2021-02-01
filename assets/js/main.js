@@ -18,15 +18,12 @@ jQuery(document).ready(function ($) {
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate(
-      {
-        scrollTop: $(href).offset().top,
-      },
-      {
-        duration: 370, // по умолчанию «400»
-        easing: 'linear', // по умолчанию «swing»
-      }
-    );
+    $('html, body').animate({
+      scrollTop: $(href).offset().top,
+    }, {
+      duration: 370, // по умолчанию «400»
+      easing: 'linear', // по умолчанию «swing»
+    });
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top,
@@ -87,8 +84,7 @@ jQuery(document).ready(function ($) {
     dots: false,
     prevArrow: '<button class="slider-btn slider-btn__prev"><span></span></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"><span></span></button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1100,
         settings: {
           slidesToShow: 2,
@@ -113,11 +109,11 @@ jQuery(document).ready(function ($) {
         $('.prices-card__more').text('Cвернуть');
         $(this).parent().find('.prices-card__more').text('Что входит в тариф');
       } else {
-        $('.accordion-js').removeClass('active');
+        // $('.accordion-js').removeClass('active');
         $(this).addClass('active');
-        $('.accordion-block-js').slideUp(100);
+        // $('.accordion-block-js').slideUp(100);
         $(this).parent().find('.accordion-block-js').show('blind');
-        $('.prices-card__more').text('Что входит в тариф');
+        // $('.prices-card__more').text('Что входит в тариф');
         $(this).parent().find('.prices-card__more').text('Cвернуть');
       }
     });
@@ -137,6 +133,13 @@ jQuery(document).ready(function ($) {
       $(this).closest('.accordion-wrapper-js').addClass('active');
       $(this).closest('.accordion-wrapper-js').find('.accordion-content-js').slideDown(300);
     }
+
+    setTimeout(function () {
+      $('html, body').animate({
+        scrollTop: $('.accordion-wrapper-js.active').offset().top - 70,
+      });
+    }, 301);
+
   });
 
   /*-------------------------------------
