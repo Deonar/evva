@@ -1,4 +1,7 @@
 jQuery(document).ready(function ($) {
+
+  document.getElementsByTagName('video')[0].play();
+
   //Mob-menu
   $('#header-burger').on('click', function (e) {
     $(this).toggleClass('active');

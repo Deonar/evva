@@ -649,7 +649,7 @@ body {
 }
 
 .header.light .header-container {
-  padding: 18px 35px;
+  padding: 15px 35px;
 }
 
 .header.h-fixed, .header._light {
@@ -657,7 +657,7 @@ body {
 }
 
 .header.h-fixed .header-container, .header._light .header-container {
-  padding: 18px 35px;
+  padding: 15px 35px;
 }
 
 .header.h-fixed .header-logo svg, .header._light .header-logo svg {
@@ -702,7 +702,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 2440px;
-  padding: 35px 50px;
+  padding: 30px 50px 10px;
   margin: 0 auto;
 }
 
@@ -955,9 +955,11 @@ body {
   z-index: 5;
 }
 
-.main__motion_mob {
-  display: none;
-  margin: auto;
+.main__motion video {
+  position: relative;
+  top: 60px;
+  display: block;
+  max-width: 100%;
 }
 
 .main-content {
@@ -2783,7 +2785,7 @@ body {
     line-height: 32px;
   }
   .header-container {
-    padding: 30px 35px;
+    padding: 15px 35px;
   }
   .header-btn {
     display: none;
@@ -2807,6 +2809,7 @@ body {
     right: 0;
     top: 0px;
     padding: 40px 35px;
+    padding-bottom: 60px;
     height: 100vh;
     width: 100%;
     max-width: 100%;
@@ -2899,13 +2902,11 @@ body {
     position: static;
     max-width: 700px;
     margin: auto;
-    padding: 100px 0 50px;
+    padding-top: 50px;
   }
-  .main__motion_mob {
-    display: block;
-  }
-  .main__motion_desc {
-    display: none;
+  .main__motion video {
+    position: static;
+    top: 0;
   }
   .main-content {
     margin: auto;
@@ -3066,6 +3067,9 @@ body {
     font-weight: bold;
     font-size: 28px;
     line-height: 32px;
+  }
+  .form-input__icon {
+    top: 35%;
   }
   .main-form {
     padding: 80px 0 0 0;
