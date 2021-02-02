@@ -8,10 +8,10 @@ jQuery(document).ready(function ($) {
   $('#header-burger').on('click', function (e) {
     $(this).toggleClass('active');
     $('#mobMenu').toggleClass('active');
-    $('body').toggleClass('overflow-h');
+    $('body, html').toggleClass('overflow-h');
   });
   $('.close-mob-menu-js').on('click', function (e) {
-    $('body').removeClass('overflow-h');
+    $('body, html').removeClass('overflow-h');
     $('#header-burger').removeClass('active');
     $('#mobMenu').removeClass('active');
   });
