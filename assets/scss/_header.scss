@@ -87,7 +87,7 @@
   &-logo {
     display: flex;
     align-items: center;
-    margin-right: 112px;
+    margin-right: 170px;
     svg {
       height: 17px;
       width: 125px;
@@ -104,14 +104,12 @@
     align-items: center;
     justify-content: space-between;
     &__wrapp {
-      width: 100%;
-      padding: 0 30px;
-      max-width: 870px;
+      padding: 0 20px;
     }
     li a {
       display: block;
       color: $text-light;
-      // padding: 0 25px;
+      padding: 0 25px;
       font-size: 14px;
       line-height: 18px;
       transition: all 0.3s ease;
@@ -169,13 +167,25 @@
   }
   &-btn {
     border: 1px solid rgba(255, 255, 255, 1);
+    margin-left: 5px;
     line-height: 40px;
     color: $text-light;
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background: rgba(255, 255, 255, 1);
+      color: $text;
+    }
+  }
+  &-btn__gray {
+    background: #d4d4d4;
+    line-height: 40px;
+    color: $text;
     margin-left: 20px;
     &:hover {
-      // color: rgba(255, 255, 255, 0.5);
-      // border: 1px solid rgba(255, 255, 255, 0.5);
-      background: rgba(255, 255, 255, 0.1);
+      background: #fff;
       transition: all 0.3s ease;
     }
     &:active {
